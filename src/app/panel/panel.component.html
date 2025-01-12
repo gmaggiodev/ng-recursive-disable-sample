@@ -1,0 +1,9 @@
+<div class="panel {{classes()}}">
+  <div class="panel__header">
+    <h2 class="panel__title">{{ title() }}</h2>
+    <app-button [disabled]="baseDisabledDirective.disabled()" mode="primary" (click)="toggle()">x</app-button>
+  </div>
+  <div class="panel__body">
+    <ng-content></ng-content>
+  </div>
+</div>

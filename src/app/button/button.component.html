@@ -1,0 +1,6 @@
+<div class="button">
+  <button [disabled]="baseDisabledDirective.disabled()" class="button__element {{classes()}}" >
+    <ng-content></ng-content>
+  </button>
+  <pre>Disabled: {{baseDisabledDirective.disabled()}}</pre>
+</div>
