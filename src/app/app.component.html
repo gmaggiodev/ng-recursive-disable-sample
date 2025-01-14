@@ -6,6 +6,14 @@
     <app-panel [disabled]="disabled2" title="My Panel 2">
       <app-button  mode="primary" (click)="messages.push('clicked')">Click me!</app-button>
     </app-panel>
+
+
+    <ng-template #footerTemplate>
+      <div style="width:100%; height: 40px; background-color: cadetblue;">
+          <app-button  mode="primary" (click)="messages.push('clicked')">Click me!</app-button>
+      </div>
+    </ng-template>
+
   </app-panel>
 
   <div class="field">

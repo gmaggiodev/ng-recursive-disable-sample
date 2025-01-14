@@ -6,7 +6,8 @@ import { DisableDirective } from '../disable.directive';
   imports: [],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
-  hostDirectives: [{directive: DisableDirective, inputs: ['disabled', 'id'], }]
+  hostDirectives: [{directive: DisableDirective, inputs: ['disabled', 'id'], }],
+  standalone: true
 })
 export class ButtonComponent {
 

@@ -10,7 +10,8 @@ import { DisableDirective } from './disable.directive';
   imports: [RouterOutlet, PanelComponent, ButtonComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: true
 })
 export class AppComponent {
   title = 'recursive-disable';
